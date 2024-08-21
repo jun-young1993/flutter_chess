@@ -1,19 +1,22 @@
+import 'package:dart_chess_pieces/dart_chess_pieces.dart';
 import 'package:flutter/material.dart';
 
 
 class BoardTile extends StatelessWidget {
   final int index;
-  // final Piece? piece;
+  final ChessPiece? piece;
   final VoidCallback onTap;
   final bool isSelected;
   final bool isPossibleMove;
-  final int crossAxisCount; // crossAxisCount를 받아옴
+  final int row; // crossAxisCount를 받아옴
+  final int col;
 
   const BoardTile({
     required this.index,
-    // required this.piece,
+    this.piece,
     required this.onTap,
-    required this.crossAxisCount, // crossAxisCount를 초기화
+    required this.row, 
+    required this.col, 
     this.isSelected = false,
     this.isPossibleMove = false,
     super.key,
@@ -21,9 +24,8 @@ class BoardTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isEvenRow = (index ~/ crossAxisCount) % 2 == 0;
-    final isEvenTile = (index % 2 == 0);
-    final isWhiteTile = (isEvenRow && isEvenTile) || (!isEvenRow && !isEvenTile);
+    
+    final isWhiteTile = (row+col) % 2 == 0;
 
     return GestureDetector(
       onTap: onTap,
@@ -36,7 +38,13 @@ class BoardTile extends StatelessWidget {
             ? const Color.fromARGB(255, 59, 44, 44)
             : const Color.fromARGB(255, 106, 81, 81),
         child: Center(
-          child: Text('piece')
+          child: piece != null
+          ? Icon(
+            piece!.getIcon(),
+            size: 36,
+            color: piece!.isWhite ? Colors.white : Colors.black,
+          )
+          : null
         ),
       ),
     );

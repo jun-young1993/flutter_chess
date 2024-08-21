@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_chess/ui/screen/standard/standard_chess_board_screen.dart';
 
-class StandardScreen extends StatefulWidget {
-  const StandardScreen({super.key});
+class ChessScreen extends StatefulWidget {
+  const ChessScreen({super.key});
   @override
-  _StandardScreenState createState() => _StandardScreenState();
+  _ChessScreenState createState() => _ChessScreenState();
 }
 
 
-class _StandardScreenState extends State<StandardScreen>{
+class _ChessScreenState extends State<ChessScreen>{
   @override
   Widget build(BuildContext context){
     return Scaffold(

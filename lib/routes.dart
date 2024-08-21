@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_chess/ui/screen/chess/chess_screen.dart';
 import 'package:flutter_chess/ui/screen/home/home_screen.dart';
-import 'package:flutter_chess/ui/screen/standard/standard_screen.dart';
+
 class FadeRoute extends PageRouteBuilder {
   FadeRoute({required this.page})
       : super(
@@ -38,7 +39,7 @@ class AppNavigator {
 
           switch(settings.name){
             case _Paths.standard:
-              return FadeRoute(page: const StandardScreen());
+              return FadeRoute(page: const ChessScreen());
             default:
               return FadeRoute(page: const HomeScreen());
           }
