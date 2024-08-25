@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_chess/main.dart';
 import 'package:flutter_chess/routes.dart';
+import 'package:flutter_chess/states/chess_game/chess_game_bloc.dart';
+import 'package:flutter_chess/states/chess_game/chess_game_event.dart';
+import 'package:flutter_chess/states/chess_game/chess_game_selector.dart';
+import 'package:flutter_chess/states/chess_game/chess_game_state.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -9,6 +15,9 @@ class HomeScreen extends StatefulWidget {
 
 
 class _HomeScreenState extends State<HomeScreen>{
+
+  ChessGameBloc get chessGameBloc => context.read<ChessGameBloc>();
+
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -21,16 +30,27 @@ class _HomeScreenState extends State<HomeScreen>{
         children: [
           Row(
             children: [
-              ElevatedButton(onPressed: (){
-
-              }, 
-              child: Text("test")),
+              ChessGameModeSelector((selectedGameMode) {
+                return DropdownButton(
+                    items: GameModeState.values.map((GameModeState value){
+                      return DropdownMenuItem<GameModeState>(
+                        value: value,
+                        child: Text(value.name),
+                      );
+                    }).toList(),
+                    value: selectedGameMode,
+                    onChanged: (gameMode) {
+                      if(gameMode != null){
+                        chessGameBloc.add(ChessGameModeSelected(gameMode: gameMode));
+                      }
+                    }
+                );
+              }),
               ElevatedButton(
                 onPressed: () {
-                  print('press');
                   AppNavigator.push(Routes.standard);
                 },
-                child: Text('빠른 시작'),
+                child: Text('START'),
               ),
             ],
           ),

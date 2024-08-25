@@ -16,16 +16,19 @@ class FadeRoute extends PageRouteBuilder {
 }
 enum Routes {
   home,
-  standard
+  standard,
+  double
 }
 
 class _Paths {
   static const String home = 'home';
   static const String standard = 'standard';
+  static const String double = 'double';
 
   static const Map<Routes, String> _pathMap = {
     Routes.home: _Paths.home,
-    Routes.standard: _Paths.standard
+    Routes.standard: _Paths.standard,
+    Routes.double: _Paths.double
   };
 
   static String of(Routes route) => _pathMap[route] ?? home;

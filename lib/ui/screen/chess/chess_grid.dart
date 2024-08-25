@@ -4,11 +4,13 @@ typedef ChessGridItemBuilder = Widget Function(BuildContext context, int index, 
 class ChessGrid extends StatelessWidget {
   final int crossAxisCount;
   final ChessGridItemBuilder itemBuilder;
+  final int itemCount;
 
   const ChessGrid({
     super.key, 
     required this.crossAxisCount,
-    required this.itemBuilder
+    required this.itemBuilder,
+    required this.itemCount
   });
 
   @override
@@ -23,7 +25,7 @@ class ChessGrid extends StatelessWidget {
                 crossAxisCount: crossAxisCount,
                 childAspectRatio: 1.0,
               ),
-              itemCount: 64,
+              itemCount: itemCount,
               itemBuilder: (context, index) {
                 // 각 셀의 2차원 배열 위치를 출력
                 return itemBuilder(context,index,index ~/ crossAxisCount,index % crossAxisCount);
