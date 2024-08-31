@@ -10,19 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ee46c6f-b237-4194-8df5-c2c529f0dc11" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/states/chess_game/chess_game_selector.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter_chess.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_chess.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/routes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routes.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/states/chess_game/chess_game_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/states/chess_game/chess_game_bloc.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/states/chess_game/chess_game_event.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/states/chess_game/chess_game_event.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/states/chess_game/chess_game_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/states/chess_game/chess_game_state.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/screen/chess/chess_grid.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/screen/chess/chess_grid.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/screen/chess/chess_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/screen/chess/chess_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/screen/home/home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/screen/home/home_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/screen/standard/standard_chess_board_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/screen/chess/chess_board_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/widget/chess/board_tile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/widget/chess/board_tile.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,19 +39,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/junyoungkim/Desktop/junyoung/app/source/flutter_chess&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "/Users/junyoungkim/Desktop/junyoung/app/source/flutter_chess",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "dart.settings",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib/ui/screen/chess" />
@@ -78,7 +70,8 @@
       <option name="presentableId" value="Default" />
       <updated>1724466518984</updated>
       <workItem from="1724466522109" duration="13190000" />
-      <workItem from="1724502195350" duration="15764000" />
+      <workItem from="1724502195350" duration="15959000" />
+      <workItem from="1725070907534" duration="102000" />
     </task>
     <servers />
   </component>
@@ -101,5 +94,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
